@@ -1,50 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-li a{
-    transition: .3s;
+li a {
+  transition: 0.3s;
 }
-li > a:hover{
-    color: aqua !important;
+li > a:hover {
+  color: aqua !important;
 }
-.cart{
-    position: relative;
+.cart {
+  position: relative;
 }
-.cart span{
-    font-size: 14px;
-    left: 90%;
-    padding: 0 2px;
-    display: inline-block;
-    background: red;
+.cart span {
+  font-size: 14px;
+  left: 90%;
+  padding: 0 2px;
+  display: inline-block;
+  background: red;
 }
-@media only screen and (max-width:992px) {
-    .hamburger{
-        display: block !important;
-    }
-    .menu{
-        display: none !important;
-    }
-    .menu.active{
-        display: flex !important;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 30%;
-        border: 1px solid black;
-        flex-direction: column;
-        z-index: 100;
-        background-color: white;
-        gap: 0px !important;
-    }
-    .menu li:first-child{
-        padding-top: 20px;
-    }
-    .menu li:last-child{
-        padding-bottom: 20px;
-    }
-    .menu li{
-        padding: 10px;
-    }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+img {
+  height: 300px;
+}
+.carts {
+  right: 0;
+  height: 100vh;
+  width: 30%;
+  padding: 20px;
+  transform: translateX(100%);
+  background: #00000084;
+  z-index: 300;
+  transition: .5s;
+  color: white;
+}
+.carts.active{
+  transform: translateX(0) !important;
+}
+tr{
+    height: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .hamburger {
+    display: block !important;
+  }
+  .menu {
+    display: none !important;
+  }
+  .menu.active {
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    border: 1px solid black;
+    flex-direction: column;
+    z-index: 100;
+    background-color: white;
+    gap: 0px !important;
+  }
+  .menu li:first-child {
+    padding-top: 20px;
+  }
+  .menu li:last-child {
+    padding-bottom: 20px;
+  }
+  .menu li {
+    padding: 10px;
+  }
 }
