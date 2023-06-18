@@ -19,3 +19,32 @@ li > a:hover{
     display: inline-block;
     background: red;
 }
+@media only screen and (max-width:992px) {
+    .hamburger{
+        display: block !important;
+    }
+    .menu{
+        display: none !important;
+    }
+    .menu.active{
+        display: flex !important;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 30%;
+        border: 1px solid black;
+        flex-direction: column;
+        z-index: 100;
+        background-color: white;
+        gap: 0px !important;
+    }
+    .menu li:first-child{
+        padding-top: 20px;
+    }
+    .menu li:last-child{
+        padding-bottom: 20px;
+    }
+    .menu li{
+        padding: 10px;
+    }
+}
