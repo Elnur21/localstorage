@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li a{
+    transition: .3s;
+}
+li > a:hover{
+    color: aqua !important;
+}
+.cart{
+    position: relative;
+}
+.cart span{
+    font-size: 14px;
+    left: 90%;
+    padding: 0 2px;
+    display: inline-block;
+    background: red;
+}
